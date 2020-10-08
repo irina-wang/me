@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  color: white;
+}
+
+.s1 {
+  background: url('../images/one.jpeg');
+  background-size: cover;
+}
+.s2 {
+  background: url('../images/two.jpeg');
+  background-size: cover;
+}
+.s3 {
+  background: url('../images/three.jpeg');
+  background-size: cover;
+}
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+  background: white;
+}
