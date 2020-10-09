@@ -77,6 +77,8 @@ span {
 }
 .fp-slidesNav.fp-bottom {
   margin-left: 1em !important;
+  display: flex;
+  justify-content: center;
 }
 
 #fp-nav ul li .fp-tooltip {
