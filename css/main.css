@@ -98,18 +98,20 @@ span {
   color: rgb(121, 0, 121);
 }
 
+/* navigation */
 .fp-slidesNav.fp-bottom {
   margin-left: 1em !important;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
+  -webkit-box-pack: flex-start;
+      -ms-flex-pack: flex-start;
           justify-content: center;
 }
 
 #fp-nav ul li .fp-tooltip {
   color: grey;
+  font-size: 30px;
 }
 
 
@@ -268,7 +270,8 @@ ion-icon {
   text-align:left;
   height:95%;
   font-weight:600;
-  background-color:aquamarine; 
+  background-color:black; 
+  color: white;
   z-index:1000; 
   writing-mode: vertical-rl;
   text-orientation: mixed;
@@ -456,27 +459,44 @@ ion-icon {
 }
 
 
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
-}
+/* .column {
+  /* width: 500px;
+  height: 400px; */
+  /* display: flex;
+  flex-wrap:wrap;
+  background-color: black;} */
+  /* align-items: center;
+  justify-content: flex-start; */
+  /* justify-content: center; */
+  /* height: 100%; */
+  /* height: 30%; */
+
 
 /* Create four equal columns that sits next to each other */
-.column {
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 4px;
+.portfolio {
+  --gap: 4px;
+  --num-rows: 4;
+  --row-height: 300px;
+
+  box-sizing: border-box;
+  display: grid;
+  height: 90%;
+
+  grid-template-columns: 600px 400px 650px 400px 600px 400px 650px 400px 600px 400px 650px 400px;
+  grid-auto-rows: var(--row-height);
+  grid-gap: var(--gap);
+  overflow: scroll;
 }
 
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
-  width: 100%;
+.portfolio > img{
+  /* display: flex; */
+  height:100%;
+  width:100%; 
+  object-fit:cover;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
+/* @media screen and (max-width: 800px) {
   .column {
     flex: 50%;
     max-width: 50%;
@@ -484,9 +504,9 @@ ion-icon {
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
   .column {
     flex: 100%;
     max-width: 100%;
   }
-} 
+}  */ 
