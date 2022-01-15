@@ -100,7 +100,7 @@ span {
   /* background: grey !important; */
   text-decoration: none;
   text-align: left;
-  color: rgb(240, 193, 240);
+  color: rgb(121, 0, 121);
 }
 
 .fp-slidesNav.fp-bottom {
@@ -186,33 +186,20 @@ span {
 }
 
 
-.fa {
-  padding: 10px;
-  /* font-size: px; */
-  width: 50px;
-  height: 30px;
+.logo {
+  padding: 5px;
+  width: 40px;
+  height: 40px;
   text-align: center;
   text-decoration: none;
 }
 
 /* Add a hover effect if you want */
-.fa:hover {
+.logo:hover {
   opacity: 0.7;
 }
 
-/* Set a specific color for each brand */
 
-/* Facebook */ */
-.fa-github {
-  background: #3B5;
-  /* color: black; */
-}
-
-/* Twitter */
-.fa-linkedin {
-  background: #55ACEE;
-  color: white;
-}
 
 fullPage{
   position:relative;
@@ -222,16 +209,16 @@ fullPage{
 .top-left {
   float:left;
   left: 50px;
-  padding-top: 5%;
+  /* padding-top: 3%; */
   font-size: 30px;
   font-weight: 600;
+  text-align: left;
 }
-
 
 
 .top-right {
   float:right;
-  right: 50px;
+  right: 5%;
   padding-top: 5%;
   font-size: 20px;
   width: 500px;
@@ -244,10 +231,10 @@ fullPage{
   /* margin: 5%; */
   display: block;
   float: left;
-  height: 100%;
   position: absolute;
   top: 30%;
-  left: 30%;
+  left: 43%;
+  width: 55%;
 }
 
 .contact-left {
@@ -275,4 +262,8 @@ fullPage{
 
 a{
   text-decoration: none;
+}
+
+ion-icon {
+  font-size: 30px;
 }
