@@ -16,14 +16,9 @@ h1{
 }
 
 
-.s1 {
-  /* background: url("../images/L_Portfolio_1.png") center;
-  background-size: cover; */
-}
-
-.s2 {
-  background: url("../images/L_Portfolio_2.png") center;
-  background-size: cover;
+.currentProject {
+  background: url("../images/Thesis_update_1.png") center;
+  background-size:contain;
 }
 
 .s3 {
