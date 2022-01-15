@@ -8,3 +8,5 @@ new fullpage('#fullPage', {
   controlArrows: false,
   slidesNavigation: true,
 })
+
+
