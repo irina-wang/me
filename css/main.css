@@ -43,9 +43,13 @@ span {
 }
 
 #fp-nav ul li .fp-tooltip {
-  color: grey;
-  font-size: 30px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: black;
+  font-size: 40px;
+  font-family: sans-serif;
+  writing-mode: tb-rl;
+  /* background-color: white; */
+  /* text-orientation:  sideways; */
+  /* font-size: 90px; */
 }
 
 
@@ -260,39 +264,6 @@ ion-icon {
   transform: rotate(0);
 }
 
-/* .card h1 {
-  margin-top: 0;
-  margin: 0;
-  font-size: 1.25em;
-  line-height: 1.2em;
-  visibility: visible;
-  background-color: #2196F3;
-  text-align: left;
-}
-
-.card:hover h1 {
-  visibility: hidden;
-  opacity: 0
-
-}
-.card p {
-  font-size: 0.75em;
-  font-family: 'Open Sans';
-  margin-top: 0.5em;
-  line-height: 2em;
-  visibility: hidden;
-  opacity: 0
-}
-
-.card:hover p {
-  font-size: 0.75em;
-  font-family: 'Open Sans';
-  margin-top: 0.5em;
-  line-height: 1em;
-  visibility: visible;
-  opacity: 1;
-
-} */
 
 
 .card .project-name h1 {
@@ -301,7 +272,7 @@ ion-icon {
   font-size: 1.25em;
   line-height: 1.2em;
   display: inline-block;
-  background-color: #2196F3;
+
   text-align: left;
 }
 
@@ -322,7 +293,6 @@ ion-icon {
   display: inline;
 }
 
-
 .card .tags {
   display: flex;
   flex-wrap: wrap;
@@ -330,28 +300,27 @@ ion-icon {
 
 .card .tags .tag {
   font-size: 0.6em;
+  color: black;
   background: rgba(255,255,255,0.5);
-  border-radius: 0.3rem;
-  padding: 0 0.5em;
+  border: 0.2rem solid black;
+  padding: 0 0.25em;
   margin: 0.25em 0.1em;
   line-height: 1.5em;
   transition: all, var(--transition-time);
-  background-color: blueviolet;
 }
 
 .card:hover .tags .tag {
-  background: var(--color);
-  color: white;
+  display: none;
 }
 
 .card .date {
   position: absolute;
   top: 0;
-  right: 0;
+  left: 0;
+  color: black;
   font-size: 0.75em;
   padding: 1em;
   line-height: 1em;
-  opacity: .8;
 }
 
 .card:before, .card:after {
