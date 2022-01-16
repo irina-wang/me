@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
 body{
-  font-family: 'Montserrat', sans-serif;
+  /* font-family: 'Montserrat', sans-serif; */
+  font-family:  sans-serif;
   text-align: center;
   color: black;
   font-weight: 400;
@@ -9,7 +10,7 @@ body{
 }
 
 h1{
-  font-family: 'Montserrat', sans-serif;
+  font-family:  sans-serif;
   text-align: center;
   color: black;
   font-weight: 600;
@@ -21,75 +22,7 @@ h1{
   background-size:contain;
 }
 
-.s3 {
-  background: url("../images/L_Portfolio_3.png") center;
-  background-size: cover;
-}
 
-.s4 {
-  background: url("../images/L_Portfolio_4.png") center;
-  background-size: cover;
-}
-
-.s5 {
-  background: url("../images/L_Portfolio_5.png") center;
-  background-size: cover;
-}
-
-.s6 {
-  background: url("../images/L_Portfolio_6.png") center;
-  background-size: cover;
-}
-
-.s7 {
-  background: url("../images/L_Portfolio_7.png") center;
-  background-size: cover;
-}
-
-.s8 {
-  background: url("../images/L_Portfolio_8.png") center;
-  background-size: cover;
-}
-
-.s9 {
-  background: url("../images/L_Portfolio_9.png") center;
-  background-size: cover;
-}
-
-.s10 {
-  background: url("../images/L_Portfolio_10.png") center;
-  background-size: cover;
-}
-
-.s11 {
-  background: url("../images/L_Portfolio_11.png") center;
-  background-size: cover;
-}
-
-.s12 {
-  background: url("../images/L_Portfolio_12.png") center;
-  background-size: cover;
-}
-
-.s13 {
-  background: url("../images/L_Portfolio_13.png") center;
-  background-size: cover;
-}
-
-.s14 {
-  background: url("../images/L_Portfolio_14.png") center;
-  background-size: cover;
-}
-
-.s15 {
-  background: url("../images/L_Portfolio_15.png") center;
-  background-size: cover;
-}
-
-.s16 {
-  background: url("../images/L_Portfolio_16.png") center;
-  background-size: cover;
-}
 
 span {
   /* background: grey !important; */
@@ -112,6 +45,7 @@ span {
 #fp-nav ul li .fp-tooltip {
   color: grey;
   font-size: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 
@@ -179,18 +113,7 @@ span {
 }
 
 
-.logo {
-  padding: 5px;
-  width: 40px;
-  height: 40px;
-  text-align: center;
-  text-decoration: none;
-}
 
-/* Add a hover effect if you want */
-.logo:hover {
-  opacity: 0.7;
-}
 
 
 
@@ -231,15 +154,12 @@ fullPage{
 }
 
 .contact-left {
-  /* border: #666; */
-  border: solid 0.2em black;
-  padding: 10px 5px;
+  float:right; 
+  display: block; 
+  position:fixed; 
+  margin-top: 185px; 
+  left: 7%;
   text-align: left;
-  background-color: white;
-  float:left;
-  left: 8%;
-  bottom: 12%;
-  position:fixed;
 
 }
 
@@ -250,6 +170,26 @@ fullPage{
   right: 5%;
   bottom: 10%;
   position:fixed;
+}
+
+.contact-right > a {
+  color: black;
+  
+}
+
+.logo {
+  color: black;
+  padding: 3px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  text-decoration: none;
+}
+
+
+/* Add a hover effect if you want */
+.logo:hover {
+  opacity: 0.7;
 }
 
 .keyword {
@@ -267,7 +207,7 @@ ion-icon {
 .section-tag{
   position:absolute;  
   text-align:left;
-  height:95%;
+  height:100%;
   font-weight:600;
   background-color:black; 
   color: white;
@@ -297,11 +237,11 @@ ion-icon {
   font-family: 'Heebo';
   --bg-filter-opacity: 0.5;
   background-image: linear-gradient(rgba(0,0,0,var(--bg-filter-opacity)),rgba(0,0,0,var(--bg-filter-opacity))), var(--bg-img);
-  height: 18em;
+  height: 10em;
   width: 10em;
   font-size: 1.5em;
   color: white;
-  border-radius: 1em;
+  /* border-radius: 1em; */
   padding: 1em;
   /*margin: 2em;*/
   display: flex;
@@ -312,7 +252,7 @@ ion-icon {
   transition: all, var(--transition-time);
   position: relative;
   overflow: hidden;
-  border: 10px solid #ccc;
+  border: 2px solid black;
   text-decoration: none;
 }
 
@@ -321,6 +261,8 @@ ion-icon {
 }
 
 .card h1 {
+  text-align:start;
+  margin-top: 0;
   margin: 0;
   font-size: 1.5em;
   line-height: 1.2em;
@@ -335,6 +277,8 @@ ion-icon {
 
 .card .tags {
   display: flex;
+  flex-wrap: wrap;
+  
 }
 
 .card .tags .tag {
@@ -342,7 +286,7 @@ ion-icon {
   background: rgba(255,255,255,0.5);
   border-radius: 0.3rem;
   padding: 0 0.5em;
-  margin-right: 0.5em;
+  margin: 0.25em 0.25em;
   line-height: 1.5em;
   transition: all, var(--transition-time);
 }
@@ -503,14 +447,15 @@ ion-icon {
 .portfolio {
   --gap: 4px;
   --num-rows: 4;
-  --row-height: 300px;
+  --row-height: 550px;
 
   box-sizing: border-box;
   display: grid;
-  height: 90%;
+  height: 95%;
 
-  grid-template-columns: 600px 400px 650px 400px 600px 400px 650px 400px 600px 400px 650px 400px;
-  grid-auto-rows: var(--row-height);
+  grid-template-columns: 900px 900px 900px 900px 900px 900px 900px 900px 900px 900px;
+  grid-template-rows: 100%;
+  /* grid-auto-rows: var(--row-height); */
   grid-gap: var(--gap);
   overflow: scroll;
 }
