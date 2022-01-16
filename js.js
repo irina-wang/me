@@ -1,7 +1,7 @@
 new fullpage('#fullPage', {
   autoScrolling: true,
   navigation: true,
-  anchors: ['Home', 'Thesis', 'Coding', 'Photography', 'Contact'],
+  anchors: ['home', 'thesis', 'coding', 'photography', 'contact'],
   navigationTooltips: ['Home', 'Thesis Project', 'Coding', 'Photography', 'Contact'],
   showActiveTooltip: true,
   scrollingSpeed: 1000,
