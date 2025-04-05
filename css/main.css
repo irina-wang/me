@@ -483,3 +483,56 @@ ion-icon {
   width:100%; 
   object-fit:cover;
 }
+
+
+.theater {
+  --gap: 4px;
+  --num-rows: 4;
+  --row-height: 550px;
+
+  box-sizing: border-box;
+  display: grid;
+  height: 95%;
+
+  grid-template-columns: 900px 900px 900px 900px 900px 900px 900px 900px 900px 900px;
+  grid-template-rows: 100%;
+  /* grid-auto-rows: var(--row-height); */
+  grid-gap: var(--gap);
+  overflow: scroll;
+}
+
+
+.photo-card {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.photo-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.photo-card:hover {
+  transform: scale(1.03);
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7); /* semi-transparent */
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  font-size: 16px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.photo-card:hover .overlay {
+  opacity: 1;
+}
