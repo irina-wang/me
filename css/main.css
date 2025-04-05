@@ -486,53 +486,51 @@ ion-icon {
 
 
 .theater {
-  --gap: 4px;
-  --num-rows: 4;
-  --row-height: 550px;
-
-  box-sizing: border-box;
-  display: grid;
-  height: 95%;
-
-  grid-template-columns: 900px 900px 900px 900px 900px 900px 900px 900px 900px 900px;
-  grid-template-rows: 100%;
-  /* grid-auto-rows: var(--row-height); */
-  grid-gap: var(--gap);
-  overflow: scroll;
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  background: black;
+  gap: 0; /* No gap between items */
 }
 
-
-.photo-card {
-  position: relative;
-  overflow: hidden;
+.theater > .photo-card {
+  height: 100%;
+  flex-shrink: 0;
+  display: block;
   cursor: pointer;
-  border-radius: 10px;
-  transition: transform 0.3s;
+  position: relative;
 }
 
 .photo-card img {
-  width: 100%;
-  height: auto;
+  height: 100%;
+  width: auto;
   display: block;
+  margin: 0;
+  padding: 0;
+  object-fit: cover;
 }
 
-.photo-card:hover {
+.theater > .photo-card:hover {
   transform: scale(1.03);
 }
 
-.overlay {
+.theater > .photo-card .overlay {
   position: absolute;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.7); /* semi-transparent */
+  background: rgba(0, 0, 0, 0.7);
   color: white;
   width: 100%;
   text-align: center;
-  padding: 10px;
+  padding: 40px;
   font-size: 16px;
   opacity: 0;
   transition: opacity 0.3s ease;
 }
 
-.photo-card:hover .overlay {
+.theater > .photo-card:hover .overlay {
   opacity: 1;
 }
+
